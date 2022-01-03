@@ -1,0 +1,50 @@
+html{
+    margin: 10rem;
+}
+
+header{
+    background-color: #4047F0 ;
+    border-radius: 0.4rem 0.4rem 0 0;
+    padding: 0.4rem;
+    color: white;
+}
+
+/* The id_generated portion design */
+
+input{
+    margin-top: 0.6rem;
+    margin-bottom: 1rem;
+    border: 0.01rem solid rgb(207,201,201);
+    border-radius: 0.2rem;
+    padding:0.3rem;
+}
+
+.id_generator{
+    border-right: 0.01rem solid rgb(207, 201, 201);
+    padding: 1rem;
+}
+
+
+.id_card_generator{
+    display: flex;
+    border: 0.01em solid rgb(201, 195, 195);
+    border-radius: 0 0 0.4rem 0.4rem;
+}
+
+.id_card_generator>*{
+    flex-basis: 100%;
+}
+.information_form{
+    display: flex;
+    flex-direction: column;
+}
+
+.generate_button{
+    border-radius: 0.2rem;
+    border: 1px solid rgba(207,201,201);
+    padding:0.4rem;
+    background-color:#4047F0 ;
+    color: white;
+}
+
+
