@@ -11,25 +11,39 @@
     <header>ID Card Generator</header>
     <div class="id_card_generator">
     <div class="id_generator">
-    <form action="" method="post" class="information_form">
+    <form id="information_form">
         <h3>Enter Student Details</h3>
         <label for="Name">Enter Name:</label>
-        <input type="text" placeholder="Enter your full name">
+        <input type="text" placeholder="Enter your full name" name="NameOfStudent">
         <label for="college name">Enter College Name:</label>
-        <input type="text" placeholder="Enter college name">
+        <input type="text" placeholder="Enter college name" name="NameOfCollege">
         <label for="location">Enter Location:</label>
-        <input type="text" placeholder="Enter location"> 
-        <div class="picture">
+        <input type="text" placeholder="Enter location" name="LocationOfStudent">
+        <div id="picture">
             <h3>Upload your photo here:</h3>
-            <input type="file" id="photo-selector">
+            <input type="file" id="photo-selector" accept="image/jpg, image/png">
+            <div id="display_image" ></div>
             <br>
             <button type="submit" class="generate_button">Generate Card</button>
         </div>
     </form>
 </div>
-<div class="generated_details">
-    These are the generated details
+<div id="generated_details">
+    <h3>Generated ID Card</h3>
+   <div id="id_card">
+     <div id="image_section">
+         <img id="image" >
+     </div>
+     <div id="info">
+         <div>
+             <span class="g_element">Name:</span><span id="Student_name"></span>
+         </div>
+         <div ><span class="g_element">College Name:</span><span id="college_name"></span></div>
+        <div><span class="g_element">Location:</span><span id="location_name"></span></div>
+     </div>
+   </div>
 </div>
 </div>
+<script src="./js/index.js"></script>
 </body>
 </html>

@@ -34,7 +34,7 @@ input{
 .id_card_generator>*{
     flex-basis: 100%;
 }
-.information_form{
+#information_form{
     display: flex;
     flex-direction: column;
 }
@@ -47,4 +47,64 @@ input{
     color: white;
 }
 
+/* displaying image below upload */
 
+#display_image{
+    display: none;
+    width:15rem;
+    height: 15rem;
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+
+/* CSS for generated id card that is having visibility hidden */
+
+#generated_details{
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+} 
+
+#image{
+    width:80%;
+    border-radius: 30rem;
+}
+
+
+#id_card{
+    
+    display: flex;
+    width:22rem;
+    height:11rem;
+    border-radius: 0.4rem;
+    margin-top:1.2rem;
+    border:0.6px solid rgb(192, 186, 186);
+}
+
+#id_card>#image_section{
+    display: flex;
+    width:40%;
+    height:11rem;
+    background:linear-gradient(to top, #4047F0, #8f94fb) ;
+    border-radius: 0.4rem 0 0 0.4rem;
+    justify-content: center;
+    align-items: center;
+}
+
+#id_card>#info{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem ;  
+    width:70%;
+    align-items: left;
+    justify-content: center;
+    margin-left:1rem;
+}
+
+.g_element{
+    color: grey;
+}
